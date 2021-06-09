@@ -1,0 +1,36 @@
+{
+  "name": "acme/brilliant-wordpress-site",
+  "description": "Kaan Koh Gym",
+  "repositories":[
+      {
+          "type":"composer",
+          "url":"https://wpackagist.org",
+          "only": [
+              "wpackagist-plugin/*",
+              "wpackagist-theme/*"
+          ]
+      }
+  ],
+  "require": {
+      "aws/aws-sdk-php":"*",
+      "wpackagist-plugin/akismet":"dev-trunk",
+      "wpackagist-plugin/wordpress-seo":">=7.0.2",
+      "wpackagist-theme/hueman":"*",
+      "wpackagist-plugin/advanced-custom-fields":"5.9.*"
+  },
+  "autoload": {
+      "psr-0": {
+          "Acme": "src/"
+      }
+  },
+  "extra": {
+      "installer-paths": {
+          "wp-content/mu-plugins/{$name}/": [
+              "wpackagist-plugin/akismet"
+          ],
+          "wp-content/plugins/{$name}/": [
+              "type:wordpress-plugin"
+          ]
+      }
+  }
+}
