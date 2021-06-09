@@ -1,6 +1,6 @@
 {
   "name": "acme/brilliant-wordpress-site",
-  "description": "Kaan Koh Gym",
+  "description": "Frontity.JS and WordPress",
   "repositories":[
       {
           "type":"composer",
@@ -25,12 +25,19 @@
   },
   "extra": {
       "installer-paths": {
-          "wp-content/mu-plugins/{$name}/": [
+          "wordpress/wp-content/mu-plugins/{$name}/": [
               "wpackagist-plugin/akismet"
           ],
-          "wp-content/plugins/{$name}/": [
+          "wordpress/wp-content/plugins/{$name}/": [
               "type:wordpress-plugin"
+          ],
+          "wp-content/plugins/{$name}/": [
+            "type:wordpress-plugin"
+        ],
+          "wp-content/themes/{$name}/": [
+            "type:wordpress-theme"
           ]
-      }
+      },
+      "wordpress-install-dir": "wordpress"
   }
 }

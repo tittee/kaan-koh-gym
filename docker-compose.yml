@@ -9,7 +9,7 @@ services:
     volumes:
         - ./nginx:/etc/nginx/conf.d
         - ./logs/nginx:/var/log/nginx
-        - ./:/var/www/html/
+        - ./wordpress:/var/www/html/
     environment:
       - NGINX_HOST=kaan-koh-gym.test
       - NGINX_PORT=80    
@@ -33,7 +33,7 @@ services:
       - ./wp-content/plugins:/var/www/html/wp-content/plugins
       - ./wp-content/uploads:/var/www/html/wp-content/uploads
       - ./wp-content/themes:/var/www/html/wp-content/themes
-      # - ./wordpress:/var/www/html/
+      - ./wordpress:/var/www/html/
       - ./php/uploads.ini:/usr/local/etc/php/conf.d/uploads.ini
       - ./php/xdebug.ini:/usr/local/etc/php/conf.d/xdebug.ini
     environment:     
