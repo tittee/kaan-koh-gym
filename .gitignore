@@ -3,6 +3,8 @@
 
 # ignore everything in the "wp-content" directory, except:
 # "mu-plugins", "plugins", "themes" directory
+wp-admin/*
+wp-includes/*
 wp-content/*
 !wp-content/mu-plugins/
 !wp-content/plugins/
@@ -10,6 +12,7 @@ wp-content/*
 
 # ignore these plugins
 wp-content/plugins/hello.php
+wp-content/plugins/index.php
 
 # ignore specific themes
 wp-content/themes/twenty*/
@@ -22,9 +25,5 @@ node_modules/
 *.sql
 *.sqlite
 
-wordpress/wp-content/*
-!wordpress/wp-content/mu-plugins/
-!wordpress/wp-content/plugins/
-!wordpress/wp-content/themes/
-wordpress/wp-includes/*
-wordpress/wp-admin/*
+wp-*.php
+xmlrpc.php

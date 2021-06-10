@@ -1,43 +1,40 @@
 {
-  "name": "acme/brilliant-wordpress-site",
-  "description": "Frontity.JS and WordPress",
-  "repositories":[
-      {
-          "type":"composer",
-          "url":"https://wpackagist.org",
-          "only": [
-              "wpackagist-plugin/*",
-              "wpackagist-theme/*"
-          ]
-      }
-  ],
-  "require": {
-      "aws/aws-sdk-php":"*",
-      "wpackagist-plugin/akismet":"dev-trunk",
-      "wpackagist-plugin/wordpress-seo":">=7.0.2",
-      "wpackagist-theme/hueman":"*",
-      "wpackagist-plugin/advanced-custom-fields":"5.9.*"
-  },
-  "autoload": {
-      "psr-0": {
-          "Acme": "src/"
-      }
-  },
-  "extra": {
-      "installer-paths": {
-          "wordpress/wp-content/mu-plugins/{$name}/": [
-              "wpackagist-plugin/akismet"
-          ],
-          "wordpress/wp-content/plugins/{$name}/": [
-              "type:wordpress-plugin"
-          ],
-          "wp-content/plugins/{$name}/": [
-            "type:wordpress-plugin"
-        ],
-          "wp-content/themes/{$name}/": [
-            "type:wordpress-theme"
-          ]
-      },
-      "wordpress-install-dir": "wordpress"
+    "name": "acme/brilliant-wordpress-site",
+    "description": "Frontity.JS and WordPress",
+    "repositories":[
+        {
+            "type":"composer",
+            "url":"https://wpackagist.org",
+            "only": [
+                "wpackagist-plugin/*",
+                "wpackagist-theme/*"
+            ]
+        }
+    ],
+    "require": {
+        "aws/aws-sdk-php":"*",
+        "wpackagist-plugin/akismet":"dev-trunk",
+        "wpackagist-plugin/wordpress-seo":">=7.0.2",
+        "wpackagist-theme/hueman":"*",
+        "wpackagist-plugin/advanced-custom-fields":"5.9.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "Acme": "src/"
+        }
+    },
+    "extra": {
+        "installer-paths": {
+            "wp-content/mu-plugins/{$name}/": [
+                "wpackagist-plugin/akismet"
+            ],
+            "wp-content/plugins/{$name}/": [
+                "type:wordpress-plugin"
+            ],
+            "wp-content/themes/{$name}/": [
+              "type:wordpress-theme"
+            ]
+        }
+    }
   }
-}
+  

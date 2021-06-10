@@ -27,24 +27,24 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-develop',
+    'version' => 'dev-develop',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => '5cc3adffb8a1d6617c857f268052808a18df79d6',
     'name' => 'acme/brilliant-wordpress-site',
   ),
   'versions' => 
   array (
     'acme/brilliant-wordpress-site' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-develop',
+      'version' => 'dev-develop',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => '5cc3adffb8a1d6617c857f268052808a18df79d6',
     ),
     'aws/aws-sdk-php' => 
     array (
