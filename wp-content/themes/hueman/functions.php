@@ -36,6 +36,9 @@ function hu_display_min_requirement_notice( $requires_what, $requires_what_versi
 //Do not remove this
 load_template( get_template_directory() . '/functions/init-core.php' );
 
+/* Custom Post Type : Courses */
+require_once get_template_directory() . '/functions/post-types/post-course.php';
+
 /**
 * The best and safest way to extend the Humean WordPress theme with your own custom code is to create a child theme.
 * You can add temporary code snippets and hacks to the current functions.php file, but unlike with a child theme, they will be lost on upgrade.

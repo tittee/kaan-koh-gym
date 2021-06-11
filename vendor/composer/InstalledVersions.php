@@ -27,33 +27,33 @@ class InstalledVersions
 private static $installed = array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-develop',
+    'version' => 'dev-develop',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'f78a4faa422dc1341cdd096eab326c6af77768a7',
     'name' => 'acme/brilliant-wordpress-site',
   ),
   'versions' => 
   array (
     'acme/brilliant-wordpress-site' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-develop',
+      'version' => 'dev-develop',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'f78a4faa422dc1341cdd096eab326c6af77768a7',
     ),
     'aws/aws-sdk-php' => 
     array (
-      'pretty_version' => '3.183.15',
-      'version' => '3.183.15.0',
+      'pretty_version' => '3.184.0',
+      'version' => '3.184.0.0',
       'aliases' => 
       array (
       ),
-      'reference' => 'ca0865f4aed816dd54c2101acc32cd4daa176b09',
+      'reference' => 'd5fa8bc58a90947cdcd08efa3f306422debaffc6',
     ),
     'composer/installers' => 
     array (
@@ -190,6 +190,15 @@ private static $installed = array (
       array (
       ),
       'reference' => 'tags/16.4',
+    ),
+    'wpackagist-plugin/wp-graphql' => 
+    array (
+      'pretty_version' => '1.3.9',
+      'version' => '1.3.9.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'tags/1.3.9',
     ),
     'wpackagist-theme/hueman' => 
     array (
