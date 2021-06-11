@@ -77,7 +77,7 @@ add_action( 'graphql_register_types', function() {
 		'type' => 'String',
 		'description' => __( 'Link to edit the content', 'your-textdomain' ),
 		'resolve' => function( \WPGraphQL\Model\Post $post, $args, $context, $info ) {
-		   return get_field( 'price', $post->databaseId );
+		   return number_format(get_field( 'price', $post->databaseId ), 2, '.', '');
 		}
 	]);
 
