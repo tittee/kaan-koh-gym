@@ -38,6 +38,8 @@ load_template( get_template_directory() . '/functions/init-core.php' );
 
 /* Custom Post Type : Courses */
 require_once get_template_directory() . '/functions/post-types/post-course.php';
+/* Custom Post Type : Trainers */
+require_once get_template_directory() . '/functions/post-types/post-trainer.php';
 
 /**
 * The best and safest way to extend the Humean WordPress theme with your own custom code is to create a child theme.
